@@ -1,0 +1,29 @@
+{
+    "language": "en",
+    "dictionaries": [
+        "en-gb",
+        "softwareTerms",
+        "typescript", // inc. JS
+        "misc"
+    ],
+    "enabledLanguageIds": [
+        "markdown",
+        "plaintext",
+        "text",
+        "yml",
+        "javascript"
+    ],
+    "ignorePaths": [
+        "**.json",
+        "**.jsonc",
+        "**.lock",
+        "**/node_modules/**",
+        ".git/**",
+        ".vscode/**",
+        "package.json",
+        "package-lock.json"
+    ],
+    "words": [
+        "commitlint"
+    ]
+}
