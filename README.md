@@ -74,3 +74,24 @@ The installation and [setup of this hook are covered in the commitlint's install
 
 ## Semantic Release
 
+1. [Install Semantic Release](https://semantic-release.gitbook.io/semantic-release/usage/installation).
+2. [Configure the CI workflow](https://semantic-release.gitbook.io/semantic-release/usage/ci-configuration)
+   - [Common CI configurations](https://semantic-release.gitbook.io/semantic-release/recipes/ci-configurations) are provided.
+3. Create a [release config](https://semantic-release.gitbook.io/semantic-release/usage/configuration)
+
+> [!NOTE]
+> Semantic Release ships with [default plugins](https://semantic-release.gitbook.io/semantic-release/usage/plugins#default-plugins) enabled by default. Specifying plugins in the config will override the defaults, for example:
+>
+> ```json
+> "plugins": [
+>     "@semantic-release/commit-analyzer",
+>     "@semantic-release/release-notes-generator",
+>     "@semantic-release/github"
+>   ]
+> ```
+
+Once set up, test everything is installed and configured by performing a dry-run test:
+
+```zsh
+npx semantic-release --dry-run
+```
